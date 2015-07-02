@@ -5,7 +5,16 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only argument.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  //Code Here
+function isTyler(name){
+	if(name === "Tyler"){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+console.log(isTyler("Tyler"));
+console.log(isTyler("Mike"));
 
 
 //Next problem
