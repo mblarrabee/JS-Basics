@@ -48,13 +48,20 @@ console.log(result(number));
 /*
   Write a function called makeCounter that makes the following code work properly.
 */
+var counter = 0;
+var makeCounter = function(){
+  function add1(){
+    return ++counter;
+  }
+  return add1;
+}
 
   //Code Here
   var count = makeCounter();
-  count() // 1
-  count() // 2
-  count() // 3
-  count() // 4
+  console.log(count()); // 1
+  console.log(count()); // 2
+  console.log(count()); // 3
+  console.log(count()); // 4
 
 
 
